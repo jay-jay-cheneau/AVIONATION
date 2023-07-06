@@ -161,7 +161,13 @@ span {
   padding-top: 20px; */
 }
 
-
+.copyright{
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: grey;
+}
 
 .social-reseaux {
   display: flex;
@@ -214,6 +220,11 @@ a{
 }
 
 @media screen and (max-width: 1024px) {
+  body{
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+  }
   .bottom-page .info-bottom-page {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -221,10 +232,13 @@ a{
   .bottom-page{
     flex-direction: column;
     justify-content: center;
+    padding: 50px;
   }
   span{
     text-align: center;
-    
+  }
+  .logo_avionation{
+    height: 150px;
   }
 }
 
